@@ -9,5 +9,22 @@
         android:id="@+id/homeFragment"
         android:name="com.project.segunfrancis.qvid19.ui.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_readMoreFragment"
+            app:destination="@id/readMoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.project.segunfrancis.qvid19.ui.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/readMoreFragment"
+        android:name="com.project.segunfrancis.qvid19.ui.ReadMoreFragment"
+        android:label="fragment_read_more"
+        tools:layout="@layout/fragment_read_more" />
 </navigation>
