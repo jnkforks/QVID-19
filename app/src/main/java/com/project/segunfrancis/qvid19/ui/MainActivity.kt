@@ -1,9 +1,10 @@
-package com.project.segunfrancis.qvid19
+package com.project.segunfrancis.qvid19.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import com.project.segunfrancis.qvid19.R
 
 class MainActivity : AppCompatActivity() {
 

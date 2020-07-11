@@ -1,4 +1,4 @@
-package com.project.segunfrancis.qvid19.data_source.remote
+package com.project.segunfrancis.qvid19.data.remote
 
 import com.project.segunfrancis.qvid19.domain.entities.QuizData
 import retrofit2.Call

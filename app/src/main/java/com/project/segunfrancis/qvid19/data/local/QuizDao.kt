@@ -1,4 +1,4 @@
-package com.project.segunfrancis.qvid19.data_source.local
+package com.project.segunfrancis.qvid19.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.Insert
