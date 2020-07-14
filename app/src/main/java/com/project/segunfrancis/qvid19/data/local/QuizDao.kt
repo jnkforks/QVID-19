@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.project.segunfrancis.qvid19.domain.entities.BaseResponse
 import com.project.segunfrancis.qvid19.domain.entities.QuizData
 
 /**
@@ -11,8 +12,8 @@ import com.project.segunfrancis.qvid19.domain.entities.QuizData
  */
 interface QuizDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertQuiz(quizData: List<QuizData>?)
+    suspend fun insertQuiz(quizData: BaseResponse?)
 
     @Query("SELECT * FROM quiz_table")
-    fun getQuiz(): LiveData<List<QuizData>>
+    fun getQuiz(): LiveData<BaseResponse>
 }
